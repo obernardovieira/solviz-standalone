@@ -1,0 +1,38 @@
+{
+    "name": "@solviz/standalone",
+    "version": "0.0.1-alpha",
+    "description": "A solidity contract visualizer using d3.js",
+    "main": "src/index.js",
+    "bin": {
+        "solviz": "bin/cli.js"
+    },
+    "scripts": {
+        "test": "mocha",
+        "lint": "eslint src/*.js src/graphics/*.js",
+        "demo": "./bin/cli.js demo/contracts/cryptokitties/KittyCore.sol"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/solviz/solviz-standalone.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "GPL-3.0-only",
+    "bugs": {
+        "url": "https://github.com/solviz/solviz-standalone/issues"
+    },
+    "homepage": "https://github.com/solviz/solviz-standalone#readme",
+    "dependencies": {
+        "chai": "4.2.0",
+        "meow": "5.0.0",
+        "mustache": "3.0.1",
+        "@solviz/core": "git://github.com/solviz/solviz-core#dev"
+    },
+    "devDependencies": {
+        "eslint": "6.1.0",
+        "eslint-config-airbnb-base": "13.2.0",
+        "eslint-plugin-import": "2.18.2",
+        "mocha": "6.2.0",
+        "openzeppelin-solidity": "2.3.0"
+    }
+}
